@@ -10,13 +10,13 @@ vote_percent = []
 
 with open('Resources/election_data.csv','r') as election_data:
 
-     # Store the contents of election_data.csv in the variable budget_data
+     # Store the contents of election_data.csv in the variable election_data
     election_data = csv.reader(election_data,delimiter=",") 
 
     # Skip the header labels to iterate with the values
     header = next(election_data)  
 
-    # Iterate through the rows in the stored file contents
+    # Loop through the rows in the stored file contents
     for row in election_data: 
 
              # Count the total number of votes
